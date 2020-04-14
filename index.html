@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gifOS</title>
+    <link id="estilos" rel="stylesheet" href="./Styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="headerTit">
+            <p>¡Bienvenidos/as a Guifos.com! ------Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </div>
+    </header>
+    <!--SECCION INTRO-->
+    <section id="intro">
+        <div class="conteinerIntro">
+            <div class="logo">
+                <img id="logoImg" src="./images/gifOF_logo.png" alt="Logo Principal vista normal">
+            </div>
+            <div class="nav">
+                <a class="btnCrear" href="./record.html">Crear Guifos</a>
+                <div id="tema">
+                    <button class="btnTema1" onclick="funcionDesplegable()">Elegir tema</button>
+                    <button class="btnTema2" onclick="funcionDesplegable()"><img id="imgdrop" src="./images/dropdown.svg" alt="Desplegable elegir tema"></button>
+                    <div id="desplegableTema">
+                        <button id="day" onclick="estiloLight()">Sailor Day</button>
+                        <button id="night" onclick="estiloDark()">Sailor Night</button>
+                    </div>
+                </div>
+                <a id="record" href="./record.html"><span>M</span>is Guifos</a>
+            </div>
+        </div>
+    </section>
+    <!--SECCION BUSCAR-->
+    <section id="busqueda">
+        <div class="conteinerBusqueda">
+            <div id="barra">
+                <div class="barraTit">
+                    <p>Buscar</p>
+                </div>
+                <div id="barraBuscar">    
+                    <input id="inputBuscar" type="text" placeholder="   Busca gifs, hashtags, temas, busca lo que quieras...">
+                    <button id="btnBuscar" type="submit" onclick="searchFromInput()"><span><img src="./images/lupa_inactive.svg" alt="Lupa">Buscar</span></button>
+                </div>
+            </div>
+            
+            <div id="opBusqueda" class="opcionalesBusqueda">
+                <button id="btn1" onclick="busquedaOp1()"><p>NBA</p></button>
+                <button id="btn2" onclick="busquedaOp2()"><p>Memes</p></button>
+                <button id="btn3" onclick="busquedaOp3()"><p>Pink Floyd</p></button>
+            </div>
+        </div>
+    </section>
+    
+    <!--SECCION SUGERIDOS-->
+    <section class="sugerido">
+        <div class="sugeridoTit">
+            <p>Hoy te sugerimos:</p>
+        </div>    
+        <div id="gifSugeridos" class="flexSugerido">
+        </div>
+    </section>
+    <!--SECCION TENDENCIAS-->
+    <section class="tendencia">
+        <div class="tendenciaTit">
+            <p id="tendenciaTitle">Tendencias:</p>
+        </div> 
+        <!-- Aca empieza el grid-->   
+        <div id="gridTrending" class="gridTendencias">
+        </div>
+    </section>
+    <script src="./script/funcion.js"></script>   
+</body>
+</html>
+
+
